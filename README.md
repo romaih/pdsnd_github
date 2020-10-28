@@ -5,7 +5,7 @@ Project created 25 Oct 2020
 Bikeshare data analytics
 
 ### Description
-Describe what your project is about and what it does
+This project is about creating interactive program to analyze data from three different cities.  
 
 ### Files used
 Include the files used
