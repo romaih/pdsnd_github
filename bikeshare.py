@@ -21,7 +21,7 @@ def get_filters():
     while city not in CITY_DATA:
         city = input("Please choose a city from the list(Chicago, New york or Washington): ").title()
 
-
+    #months used is this program are limited to the first six months
     month_filter = ['All', 'January', 'February' , 'March' , 'April', 'May' , 'june']
     month = input("Type month name to filter by or all : ").title()
     while month not in month_filter:
