@@ -21,7 +21,7 @@ def get_filters():
     while city not in CITY_DATA:
         city = input("Please choose a city from the list(Chicago, New york or Washington): ").title()
 
-
+    #months used is this program are limited to the first six months
     month_filter = ['All', 'January', 'February' , 'March' , 'April', 'May' , 'june']
     month = input("Type month name to filter by or all : ").title()
     while month not in month_filter:
@@ -58,7 +58,7 @@ def load_data(city, month, day):
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.day_name()
-
+    #day_name method gets day of week name
     # filter by month if applicable
     if month != 'All':
         # use the index of the months list to get the corresponding int
@@ -142,6 +142,7 @@ def user_stats(df):
     print('Counts of user types :\n',df['User Type'].value_counts())
 
     # TO DO: Display counts of gender
+    # Not all files contain Gender column
     if 'Gender' in df.columns:
         print('Counts of gender :\n', df['Gender'].value_counts())
     else:
