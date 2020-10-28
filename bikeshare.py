@@ -142,6 +142,7 @@ def user_stats(df):
     print('Counts of user types :\n',df['User Type'].value_counts())
 
     # TO DO: Display counts of gender
+    # Not all files contain Gender column
     if 'Gender' in df.columns:
         print('Counts of gender :\n', df['Gender'].value_counts())
     else:
