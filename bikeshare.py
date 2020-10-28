@@ -58,7 +58,7 @@ def load_data(city, month, day):
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.day_name()
-
+    #day_name method gets day of week name
     # filter by month if applicable
     if month != 'All':
         # use the index of the months list to get the corresponding int
